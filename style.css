@@ -1,0 +1,71 @@
+body{
+    
+    color:rgb(28, 189, 230);
+    background-color:black ;
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Bungee Inline', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: 'Turret Road', sans-serif;
+}
+
+td, tr{
+    border: 1px solid;
+    padding: 5px;
+    
+}
+
+a{
+    color:rgb(53, 22, 125);
+    padding: 50px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+a:hover{
+    color:rgb(77, 214, 239);
+
+}
+
+span{
+    padding: 20px;
+}
+
+
+
+div.container {
+    text-align: center;
+  }
+  
+
+  .aligned{ 
+    display:list-item;
+    align-items:center;
+    font-size: large;
+    transition: background-color 2s ease-out 100ms;
+}
+
+#imageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    display: none;
+}

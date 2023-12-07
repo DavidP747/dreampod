@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamPod</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jockey+One&family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+
+    <link href = "style.css" rel = "stylesheet">
+</head>
+
+<body>
+
+    <img width=100px src="VR Games.png" alt="logo">
+    <h1>Evolution Of Gaming</h1>
+
+    <!--Navbar-->
+    <div>
+        <span> 
+        <a href="DreamPod.html">Home</a>
+        <a href="DreamPod2.html">Products</a>
+        <a href="dreampod3.html">Game</a>
+        <a href="DreamPod4.html">Order</a>
+        </span>
+    </div>
+
+    <p>The evolution of gaming has been a remarkable journey, transforming from the classic arcade style to the cutting-edge realms of Virtual Reality (VR) and Augmented Reality (AR). In the early days, gamers flocked to arcades, drawn by the allure of pixelated adventures and high scores on machines like Pac-Man and Space Invaders. The advent of home gaming consoles brought gaming to living rooms, enabling a new level of accessibility. As technology advanced, immersive experiences emerged with 3D graphics and realistic simulations. The breakthrough moment came with VR and AR, where players could step directly into the game or blend digital elements seamlessly with the real world. Enjoy the simple game below just to taste how far we have come from a simple guessing game to the amazing experinces our products offer!</p>
+
+    <h1>Number Guessing Game</h1>
+    <p>Can you guess the right number between 1 and 10?</p>
+    
+    <label for="guess">Your Guess:</label>
+    <input type="number" id="guess">
+    <button onclick="checkGuess()">Submit Guess</button>
+
+    <div id="result"></div>
+
+    <script>
+        // Generate a random number between 1 and 10
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            // Get the user's guess
+            const userGuess = document.getElementById('guess').value;
+
+            // Check if the guess is correct, too high, or too low
+            if (userGuess == randomNumber) {
+                displayResult("Congratulations! You guessed the correct number!");
+            } else if (userGuess < randomNumber) {
+                displayResult("Too low! Try again.");
+            } else {
+                displayResult("Too high! Try again.");
+            }
+        }
+
+        function displayResult(message) {
+            // Display the result message
+            document.getElementById('result').textContent = message;
+
+            // Reset the input field
+            document.getElementById('guess').value = '';
+
+            // Generate a new random number for the next round
+            randomNumber = Math.floor(Math.random() * 10) + 1;
+        }
+    </script>
+</body>
+</html>
